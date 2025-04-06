@@ -26,7 +26,9 @@ const postTask = new schema({
     status:{
         type:String,
         default:"In-Progress"
-    }
+    },
+    
 },{timestamps:true})
+
 
 module.exports = mongoose.model('Tasks' , postTask)
